@@ -1,0 +1,122 @@
+.card-container{
+    height: 350px;
+    width: 300px;
+    background-color: rgb(250, 191, 255);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 6px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.card-container.light{
+    background-color: #747272;
+}
+.card-container.light h1,
+.card-container.light p{
+color: #ffffff;
+}
+.card-container img{
+    height: 120px;
+    width: 120px;
+    margin:10px 0;
+}
+.card-container h1{
+    font-size: 20px;
+}
+.card-container p{
+    text-align: left;
+    padding: 0 10px;
+    margin-top: 15px;
+    margin-left: 15px;
+    font-size: 13px;
+}
+.card-container .card-button{
+    display: flex;
+    width: 100%;
+    margin-top: 20px;
+    justify-content: space-around;
+}
+.card-container button{
+    padding: 10px 20px;
+    border-radius: 6px;
+    outline: none;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    cursor: pointer;
+}
+.card-button-viewlive button{
+    background-color: rgb(255, 6, 143);
+    color: azure;
+}
+/* .card-container.light .card-button-viewlive button{
+    background-color: rgb(228, 52, 228);
+  
+} */
+.card-button-viewlive button{
+    /* background-color: rgb(255, 6, 143); */
+    background: linear-gradient(to right,#e2b604,#f97316);
+    color: azure;
+}
+.card-container .card-button-viewlive button:hover{
+    box-shadow: 0 0 25px #facc15;
+}
+.card-container .card-button-viewlive button a{
+    color: white;
+}
+.card-button-viewcode button{
+    /* background-color: rgb(15, 180, 24); */
+    background: linear-gradient(to right,#3730a3,#9333ea);
+    color: azure;
+}
+.card-button-viewcode button:hover{
+    box-shadow: 0 0 25px #3730a3;
+    
+}
+
+/*Responsive*/
+
+@media(max-width:978px){
+    .card-container{
+        width: 250px;
+    }
+    .card-container button{
+        padding: 10px 18px;
+        font-size: 13px;
+    } 
+}
+
+/* @media(max-width:830px){
+    .card-container{
+        width: 250px;
+    }
+    .card-container button{
+        padding: 10px 18px;
+        font-size: 13px;
+    } 
+} */
+
+@media(max-width:686px){
+    .card-container{
+        width: 250px;
+    }
+    .card-container button{
+        padding: 10px 18px;
+        font-size: 13px;
+    }
+}
+
+
+@media(max-width:380px){
+    .card-container{
+        width: 280px;
+    }
+}
+@media(max-width:350px){
+    .card-container{
+        width: 250px;
+    }
+    .card-container button{
+        padding: 10px 18px;
+        font-size: 13px;
+    }
+}

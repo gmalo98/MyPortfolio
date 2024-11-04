@@ -1,0 +1,210 @@
+header{
+    position: fixed;
+    width: 100%;
+    height: 75px;
+    top: 0;
+    right: 0;
+    z-index: 99;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 13%;
+    background-color: #f8c6f8;
+}
+header.light{
+    background-color: #121212;
+    
+}
+.logo{
+    color: #161345;
+    font-size: 26px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+.logo.light{
+    color: #ececec;
+}
+.logo span{
+    color:rgb(255, 0, 200);
+}
+.navlist{
+    display: flex;
+    align-items: center; 
+    justify-content: space-around;
+    background-color: rgb(252, 140, 252);
+    border-radius: 6px;
+    
+}
+.light .navlist{
+    background-color: #5f5e5e;
+    
+}
+.light .navlist li{
+    color: white;
+}
+.navlist li{
+    color: #161345;
+    font-size: 16px;
+    padding: 10px 20px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    transition: all 0.5s;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: all 0.5s ease-in-out;
+    font-weight: 700;
+}
+.navlist li:hover{
+    background-color: rgb(231, 81, 231);
+    transition: all 0.5s ease-in-out
+}
+.light .navlist li:hover{
+    background-color: #c80cee;
+}
+.moon{
+    font-size: 26px;
+    color: rgb(171, 4, 248);
+    margin-right: 35px;
+    cursor: pointer;
+}
+.moon.sun{
+    color: #161345;
+}
+.moon.sun.light{
+    color: #ffffff;
+}
+.nav-btn{
+    display: flex;
+    align-items: center;
+
+}
+
+
+
+.hamburger{
+    cursor: pointer;
+    transition: all 0.5s ease;
+    display: none;
+}
+.hamburger .two{
+    transform: translateX(0);
+    transition: all 0.5s ease;
+    opacity: 1;
+}
+.hamburger.crossed .two{
+ transform: translateX(-18px);
+ transition: all 0.5s ease;
+ opacity: 0;
+}
+.hamburger.crossed .one{
+    transition: all 0.5s ease;
+    transform: rotate(-45deg) translateY(11px);
+}
+.hamburger.crossed .three{
+    transition: all 0.5s ease;
+    transform: rotate(45deg) translateY(-11px);
+}
+.hamburger div{
+    height: 2px;
+    width: 30px;
+    margin: 6px 0;
+    background-color: #161345;
+}
+
+
+#light div{
+    background-color: #c80cee;
+}
+
+/*Responsive design*/
+
+@media(max-width:1405px){
+    header{
+        padding: 30px 5%;
+        transition: 0.5s;
+        /* background-color: #fdd9f5fd; */
+      
+    }
+}
+
+
+
+@media(max-width:956px){
+    header{
+        padding: 20px 5%;
+       
+    }
+   .nav-btn{
+   margin-right: -10px;
+   }
+   .navlist{
+    margin-right: 20px;
+   }
+   .navlist li{
+    font-size: 14px;
+   }
+    .logo{
+        margin-right: 20px;
+        margin-left: -5px;
+    }
+}
+@media(max-width:812px){
+   .logo{
+    font-size: 22px;
+   }
+   .navlist.showpage{
+    position: fixed;
+    display: block;
+    border-radius: 0px;
+    top: 74px;
+    right:-7.2px;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    transform: translateX(3.5%);
+    transition: all 0.4s ease-in-out;
+ }
+ .light .navlist.showpage,
+ .light .navlist{
+    background-color: #161345;
+    
+ }
+ .light .navlist.showpage li{
+    color: #c80cee;
+ }
+ 
+ .navlist.hidepage li{
+    display: block;
+    padding: 5px 10px;
+    margin: 10px 0;
+    transition: all 0.4s ease-in-out
+ }
+ .navlist{
+    position: fixed;
+    background-color:rgb(250, 144, 253);
+    top: 74px;
+    right:-20px;
+    height: 100vh;
+    width: 100vw; 
+    z-index: 999;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    transform: translateX(100%);
+    transition: all 0.4s ease-in-out
+ }
+    .navlist.showpage li{
+        padding: 5px 10px;
+        margin: 10px 0;
+        display: block;
+    }
+    .hamburger{
+        display: block;
+        margin-right: 5px;
+    }
+    
+}

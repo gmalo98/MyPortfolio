@@ -1,0 +1,62 @@
+/* .slider-container{
+  background-color: red;
+} */
+.slider-container{
+  /* margin: 40px 00px; */
+  padding-bottom:40px ;
+  background:#ffc6cc;
+  /* background-color: rgb(161, 5, 192); */
+}
+.slider-container.light{
+  background-color: #4b4949;
+}
+.slider-container .slide-header{
+  text-align: center;
+  padding: 30px 0 50px 0;
+ color: #161345;
+}
+.slider-container.light .slide-header{
+  color: #c80cee;
+}
+.slick-prev:before,.slick-next:before {
+  color: #c636ff;
+}
+.slick-slide{
+  /* background-color: yellow; */
+  padding: 20px 0;
+}
+.slick-slider{
+  margin-bottom: 30px;
+}
+.slick-dots{
+  /* background-color: aqua; */
+}
+
+.slick-dots li button::before{
+  color: rgb(255, 0, 157);
+}
+.slick-dots li button::before{
+  margin-top: 30px;
+  font-size: 8px;
+}
+.slick-slide>div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.slick-dots li.slick-active button:before
+{
+    opacity: 1;
+    color: rgb(255, 0, 157);
+}
+.slick-prev
+{
+    left: 15px;
+    z-index: 1;
+}
+
+
+.slick-next
+{
+    right: 15px;
+}

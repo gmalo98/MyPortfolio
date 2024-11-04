@@ -1,24 +1,31 @@
-import logo from './logo.svg';
+
+import { useState } from 'react';
 import './App.css';
+import Hero from './Components/Hero/Hero';
+import Navbar from './Components/Navbar/Navbar';
+import Contact from './Components/Contact/Contact';
+import Footer from './Components/Footer/Footer';
+import Skill from './Components/Skills/Skill';
+import Projects from './Components/Projects/Projects';
+import About from './Components/About/About';
+//import Successpage from './Components/Successpage/Successpage';
+
 
 function App() {
+  const [mode,setMode]=useState("dark");
+
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+    <Navbar mode={mode} setMode={setMode}/>
+    <Hero mode={mode}/>
+    <About mode={mode} />
+    <Skill mode={mode}/>
+    <Projects mode={mode}/>
+    <Contact mode={mode}/>
+    <Footer mode={mode}/>
+    {/* <Successpage/> */}
+    </>
   );
 }
 

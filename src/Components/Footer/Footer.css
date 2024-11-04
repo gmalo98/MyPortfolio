@@ -1,0 +1,85 @@
+.foot-box{
+    background-color: #e295fafd;
+    display: flex;
+    flex-direction: column;
+}
+.foot-box.light{
+    background-color: #121212; 
+}
+.foot-logo{
+    margin: 10px 0 0 10px;
+    color: #161345;
+}
+.foot-box.light .foot-logo{
+    color: #ff00bf;
+}
+.foot-logo span{
+    color: rgb(255, 0, 98);
+}
+.foot-box.light .foot-logo span{
+        color: #cd42e9;
+}
+.social{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.icon-round {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 40px;
+    border: 1px solid rgb(121, 21, 151);
+    border-radius: 50%;
+    margin-left: 15px;
+    transition: all 0.5s ease;
+    transform: translateY(0);
+    cursor: pointer;
+}
+.icon-round a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.foot-box.light .icon-round{
+background-color: #cd42e9;
+}
+.foot-social{
+    margin-bottom: 20px;
+}
+.icon-round:hover{
+background-color: rgb(121, 21, 151);
+box-shadow: 0 0 20px rgb(121, 21, 151);
+color: white;
+transition: all 0.5s ease;
+transform: translateY(-10px) scale(1.2);
+}
+.icon-round:hover>a{
+    color: white;
+}
+.foot-box.light .icon-round:hover{
+    box-shadow: 0 0 25px #cd42e9;
+    }
+.icon{
+    font-size: 20px;
+}
+
+.foot-declaration{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+.foot-box.light .foot-declaration{
+    color: white;
+}
+.foot-declaration span{
+    font-size: 25px;
+    color: rgb(255, 0, 0);
+}
+.foot-box.light .foot-declaration span{
+    /* font-size: 20px; */
+    color: #cd42e9;
+}
